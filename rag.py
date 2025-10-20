@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Carregando PDF
-file_path = "./OPERACAO-DE-TRATORES.pdf"
+file_path = "./OPERACAO-DE-TRATORES.pdf"  
 loader = PyPDFLoader(file_path)
 
 docs = loader.load()
@@ -28,15 +28,6 @@ vector_store = Chroma(
     persist_directory="./data/chroma_db"
 )
 
+# Adicione splits no vectorStore
 vector_store.add_documents(all_splits)
-
-
-
-# results = vector_store.similarity_search(
-#     "Para que serve o diferencial"
-# )
-
-# for chuncks in results:
-#     print(chuncks.page_content)
-
 

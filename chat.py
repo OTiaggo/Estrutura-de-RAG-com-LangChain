@@ -18,8 +18,6 @@ results = vector_store.similarity_search(
     "Para que serve o diferencial ?"
 )
 
-# print(results)
-
 @tool
 def retrieve_context(query: str) -> str:
     """
