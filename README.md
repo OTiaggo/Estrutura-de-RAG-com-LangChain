@@ -46,7 +46,7 @@ O sistema é capaz de:
    ```
    > Substitua `sua_chave_aqui` pela sua chave real obtida no [Painel da OpenAI](https://platform.openai.com/account/api-keys).
 
-4. Coloque os relatórios da **WEG (2º semestre de 2025)** dentro da pasta `data/`.  
+4. Altere os documentos na pasta `data/` caso queira testar com pdf própio.  
 
 5. Gere a base vetorial executando:  
    ```bash
