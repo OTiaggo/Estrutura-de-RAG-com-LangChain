@@ -40,7 +40,7 @@ def retrieve_context(query: str) -> str:
 agent = create_agent(
     model="gpt-4o-mini",
     tools=[retrieve_context],
-    system_prompt="Você é um especialista em operar tratores."
+    system_prompt="Você é um expecialista em finanças e possui os dados dos resultados do segundo trimestre de 2025 da empresa WEG."
 )
 
 while True:

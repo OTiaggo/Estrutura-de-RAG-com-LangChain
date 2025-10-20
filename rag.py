@@ -3,14 +3,18 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings
 from langchain_chroma import Chroma
 
+import os
 from dotenv import load_dotenv
 load_dotenv()
 
-# Carregando PDF
-file_path = "./OPERACAO-DE-TRATORES.pdf"  
-loader = PyPDFLoader(file_path)
+# Carregando PDFs
+pdf_folder = "./dados"
+pdf_files = [os.path.join(pdf_folder, f) for f in os.listdir(pdf_folder)]
 
-docs = loader.load()
+docs = []
+for file_path in pdf_files:
+    loader = PyPDFLoader(file_path)
+    docs.extend(loader.load())
 
 # Criando Chunks
 text_splitter = RecursiveCharacterTextSplitter(

@@ -10,8 +10,8 @@ Este projeto fornece uma **estrutura básica** para criação de um sistema de Q
 ## 📂 Contéudo do Repositório  
 - `rag.py` – código para indexação/armazenamento da base de conhecimento e mecanismo de RAG.  
 - `chat.py` – interface simples de chat para interagir com o sistema.  
-- `data/` – pasta contendo a base de dados (por exemplo, `chroma_db`) onde os documentos são armazenados ou indexados.  
-- `OPERACAO‑DE‑TRATORES.pdf` – exemplo de documento inserido na base de conhecimento.  
+- `data/` – pasta contendo a base de dados (por exemplo, `chroma_db`) com o vector store.  
+- `dados/` – pasta contendo documentos referentes ao resultado do segundo trimestre de 2025 da WEG. Vamos usar esses documentos como exemplo  
 - `requeriments.txt` – lista de dependências necessárias.  
 - `.gitignore` – arquivos/pastas ignorados no versionamento.
 
